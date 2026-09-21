@@ -13,3 +13,5 @@ Final public CV benchmark:
 
 Any manuscript, supplement, response letter or dashboard text that reports the polygon-CV
 result should be reconciled to the final public benchmark before submission.
+
+Reproducibility note: Minor rerun variation can occur because the historical Random Forest workflow was not fully seeded.
