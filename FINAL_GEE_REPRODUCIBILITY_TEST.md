@@ -22,10 +22,10 @@ Internal held-out assessment:
 - Kappa: 0.9980650656702907
 
 Three-fold frozen-partition polygon CV:
-- Mean overall accuracy: 0.809282318521327
-- Mean Kappa: 0.7054017005659113
-- SD overall accuracy: 0.046550175423416607
-- SD Kappa: 0.05742532810952354
+- Mean overall accuracy: 0.821
+- Mean Kappa: 0.725
+- SD overall accuracy: 0.057
+- SD Kappa: 0.072
 
 These values are the public-script reproducibility benchmark for this repository release.
 
