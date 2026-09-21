@@ -74,3 +74,7 @@ returned consistent results. The final benchmark for the frozen three-fold polyg
 The archived annual classified images remain the authoritative annual map products used in the
 study. The original 81 reference features, sampled predictor table and 70/30 split, and CV fold
 partition are preserved as separate Earth Engine assets for reproducibility.
+
+
+### Reproducibility note
+Minor rerun variation can occur because the historical Random Forest workflow was not fully seeded. The locked CV benchmark should therefore be reported as **80.9% ± 4.7 percentage points; Kappa = 0.705 ± 0.057**, while the archived annual classified images remain the authoritative manuscript products.
