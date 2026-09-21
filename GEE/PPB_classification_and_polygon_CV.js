@@ -2,13 +2,16 @@
 // PORT PHILLIP BAY BENTHIC HABITAT MONITORING — CLASSIFICATION + POLYGON CV
 // Public reproducibility version
 // ============================================================================
-// The classification and polygon-CV computational blocks below are copied from
-// the final working Earth Engine editor workflow. The only structural change is
-// replacement of the nine Code Editor Imports with the consolidated table asset
-// PPB_polygon_samples_type2. Stale comments/display labels were corrected only.
+// The classification and polygon-CV computational blocks below retain the final
+// working Earth Engine workflow while replacing manual Code Editor Imports with
+// public archival assets. For reproducibility, the script loads:
+// (1) the 81 original reference features with preserved IDs;
+// (2) the frozen sampled predictor table and original 70/30 split; and
+// (3) the exact saved 3-fold polygon-CV partition.
 //
 // IMPORTANT: Do not alter RF settings, predictor order, dates, sampling scale,
-// fold allocation seeds, or the explicit CV RF seed when reproducing the study.
+// the frozen split/fold assignments, or the explicit CV RF seed when reproducing
+// the repository benchmark.
 // ============================================================================
 
 // ============================================================================
@@ -16,24 +19,24 @@
 // Verified distribution: 81 polygons across 9 classes
 // 0:6, 1:5, 2:3, 3:11, 4:5, 5:7, 6:30, 7:7, 8:7
 // ============================================================================
-var PPB_polygon_samples_type2 = ee.FeatureCollection(
+var publicTrainingPolygons = ee.FeatureCollection(
   'projects/ee-odebsconstant/assets/PPB_training_polygons_with_original_IDs'
 );
 
 // Re-create the nine collections used by the original working editor.
 // This lets the computational code below remain unchanged.
-var Deep_water = PPB_polygon_samples_type2.filter(ee.Filter.eq('class_num', 0));
-var Sub_canopy_brown_and_Caulerpa_Biotope = PPB_polygon_samples_type2.filter(ee.Filter.eq('class_num', 1));
-var Ecklonia_Phyllospora_Communities = PPB_polygon_samples_type2.filter(ee.Filter.eq('class_num', 2));
-var Sublittoral_Seagrass_Beds = PPB_polygon_samples_type2.filter(ee.Filter.eq('class_num', 3));
-var Sublittoral_SeaweedCommunities_onSediment = PPB_polygon_samples_type2.filter(ee.Filter.eq('class_num', 4));
-var RockyReef = PPB_polygon_samples_type2.filter(ee.Filter.eq('class_num', 5));
-var Sediment = PPB_polygon_samples_type2.filter(ee.Filter.eq('class_num', 6));
-var Shoreline_veg = PPB_polygon_samples_type2.filter(ee.Filter.eq('class_num', 7));
-var Bare_rocks = PPB_polygon_samples_type2.filter(ee.Filter.eq('class_num', 8));
+var Deep_water = publicTrainingPolygons.filter(ee.Filter.eq('class_num', 0));
+var Sub_canopy_brown_and_Caulerpa_Biotope = publicTrainingPolygons.filter(ee.Filter.eq('class_num', 1));
+var Ecklonia_Phyllospora_Communities = publicTrainingPolygons.filter(ee.Filter.eq('class_num', 2));
+var Sublittoral_Seagrass_Beds = publicTrainingPolygons.filter(ee.Filter.eq('class_num', 3));
+var Sublittoral_SeaweedCommunities_onSediment = publicTrainingPolygons.filter(ee.Filter.eq('class_num', 4));
+var RockyReef = publicTrainingPolygons.filter(ee.Filter.eq('class_num', 5));
+var Sediment = publicTrainingPolygons.filter(ee.Filter.eq('class_num', 6));
+var Shoreline_veg = publicTrainingPolygons.filter(ee.Filter.eq('class_num', 7));
+var Bare_rocks = publicTrainingPolygons.filter(ee.Filter.eq('class_num', 8));
 
-print('Public training polygons:', PPB_polygon_samples_type2.size());
-print('Public training distribution:', PPB_polygon_samples_type2.aggregate_histogram('class_num'));
+print('Public training polygons:', publicTrainingPolygons.size());
+print('Public training distribution:', publicTrainingPolygons.aggregate_histogram('class_num'));
 
 // //////////////////////////////////////////////////MAIN CODE START///////////////////////////////////////////////////////////
 
@@ -411,8 +414,8 @@ var labeledImage = classified
 
 // Export.image.toAsset({
 //   image: labeledImage,
-//   description: 'PortPhillipBay_Classified_2016',
-//   assetId: 'projects/ee-odebsconstant/assets/PPB_Classified_2016_2',
+//   description: 'PortPhillipBay_Classified_2025',
+//   assetId: 'projects/ee-odebsconstant/assets/PPB_Classified_2025_2',
 //   region: ROI2.geometry(),
 //   scale: 10,
 //   maxPixels: 1e13
