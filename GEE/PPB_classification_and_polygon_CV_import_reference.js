@@ -1,7 +1,9 @@
-// AUDIT REFERENCE: classification + polygon-CV blocks extracted from the final
-// working GEE editor source. This reference assumes the nine FeatureCollections
-// already exist as Code Editor Imports. Use PPB_classification_and_polygon_CV.js
-// for the public standalone version.
+// AUDIT REFERENCE ONLY: classification + polygon-CV blocks extracted from the
+// original working GEE editor source. This file assumes the nine FeatureCollections
+// already exist as Code Editor Imports and preserves historical workflow structure.
+// It is retained for provenance and is NOT the public reproducibility benchmark.
+// Use PPB_classification_and_polygon_CV.js for the locked standalone workflow and
+// the final reported repository CV benchmark.
 
 // //////////////////////////////////////////////////MAIN CODE START///////////////////////////////////////////////////////////
 
