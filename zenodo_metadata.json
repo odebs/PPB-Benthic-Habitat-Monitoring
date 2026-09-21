@@ -1,0 +1,26 @@
+{
+  "title": "Port Phillip Bay benthic habitat monitoring: classification, validation, QA and dashboard code (2016–2025)",
+  "upload_type": "dataset",
+  "description": "Code and derived data supporting an uncertainty-aware decadal benthic habitat monitoring framework for Port Phillip Bay, Australia (2016–2025), including Google Earth Engine classification and dashboard code, polygon-blocked cross-validation, independent validation inputs, annual habitat areas, turbidity analysis inputs, compositing sensitivity outputs, and classification-persistence products.",
+  "creators": [
+    {"name": "Odebiri, Omosalewa"},
+    {"name": "Young, Mary"},
+    {"name": "Francis, Prue"},
+    {"name": "Critchell, Kay"},
+    {"name": "Sherman, Craig"},
+    {"name": "Callahan, Laney"}
+  ],
+  "keywords": [
+    "benthic habitat",
+    "Port Phillip Bay",
+    "Google Earth Engine",
+    "Sentinel-2",
+    "Random Forest",
+    "coastal monitoring",
+    "seagrass",
+    "macroalgae",
+    "dashboard",
+    "remote sensing"
+  ],
+  "version": "1.0.0"
+}
