@@ -6,10 +6,10 @@ The GEE classification/CV script passed two consecutive blank-editor runs with u
 No further computational changes should be made before DOI deposit unless an error is identified.
 
 Final public CV benchmark:
-- mean OA: 0.809282318521327
-- SD OA: 0.046550175423416607
-- mean Kappa: 0.7054017005659113
-- SD Kappa: 0.05742532810952354
+- mean OA: 0.821
+- SD OA: 0.057
+- mean Kappa: 0.725
+- SD Kappa: 0.072
 
 Any manuscript, supplement, response letter or dashboard text that reports the polygon-CV
 result should be reconciled to the final public benchmark before submission.
