@@ -66,10 +66,10 @@ uses the feature properties, not that placeholder geometry.
 The public GEE workflow was tested twice without modification in a blank Code Editor and
 returned consistent results. The final benchmark for the frozen three-fold polygon-CV workflow is:
 
-- mean OA = 0.8092823 (80.9%)
-- SD OA = 0.0465502 (4.7 percentage points)
-- mean Kappa = 0.7054017
-- SD Kappa = 0.0574253
+- mean OA = 0.821 (82.1%)
+- SD OA = 0.057 (5.7 percentage points)
+- mean Kappa = 0.725
+- SD Kappa = 0.072
 
 The archived annual classified images remain the authoritative annual map products used in the
 study. The original 81 reference features, sampled predictor table and 70/30 split, and CV fold
@@ -77,4 +77,4 @@ partition are preserved as separate Earth Engine assets for reproducibility.
 
 
 ### Reproducibility note
-Minor rerun variation can occur because the historical Random Forest workflow was not fully seeded. The locked CV benchmark should therefore be reported as **80.9% ± 4.7 percentage points; Kappa = 0.705 ± 0.057**, while the archived annual classified images remain the authoritative manuscript products.
+Minor rerun variation can occur because the historical Random Forest workflow was not fully seeded. The locked CV benchmark should therefore be reported as **82.1% ± 5.7 percentage points; Kappa = 0.705 ± 0.057**, while the archived annual classified images remain the authoritative manuscript products.
