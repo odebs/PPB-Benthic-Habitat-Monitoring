@@ -1,0 +1,10 @@
+system:index,class,class_name,mean_persistence,proportion_gt8,.geo
+0,0,Deep water,9.740783627022564,0.9377162825710681,"{""type"":""MultiPoint"",""coordinates"":[]}"
+1,1,Sub-canopy brown & Caulerpa,5.415788291451238,0.07224382109013475,"{""type"":""MultiPoint"",""coordinates"":[]}"
+2,2,Ecklonia–Phyllospora,6.027959936813491,0.17124201146049922,"{""type"":""MultiPoint"",""coordinates"":[]}"
+3,3,Sublittoral seagrass,8.398257774643978,0.6357872497117728,"{""type"":""MultiPoint"",""coordinates"":[]}"
+4,4,Seaweed on sediment,6.818040573253043,0.23222296408572005,"{""type"":""MultiPoint"",""coordinates"":[]}"
+5,5,Rocky reef,7.27781955685231,0.36179722146785365,"{""type"":""MultiPoint"",""coordinates"":[]}"
+6,6,Sediment,8.839060769953726,0.6930178655065368,"{""type"":""MultiPoint"",""coordinates"":[]}"
+7,7,Shoreline vegetation,8.563594403701616,0.648824430496835,"{""type"":""MultiPoint"",""coordinates"":[]}"
+8,8,Bare rocks,6.408647311101626,0.14912456249585868,"{""type"":""MultiPoint"",""coordinates"":[]}"
