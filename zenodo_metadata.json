@@ -3,12 +3,24 @@
   "upload_type": "dataset",
   "description": "Code and derived data supporting an uncertainty-aware decadal benthic habitat monitoring framework for Port Phillip Bay, Australia (2016–2025), including Google Earth Engine classification and dashboard code, polygon-blocked cross-validation, independent validation inputs, annual habitat areas, turbidity analysis inputs, compositing sensitivity outputs, and classification-persistence products.",
   "creators": [
-    {"name": "Odebiri, Omosalewa"},
-    {"name": "Young, Mary"},
-    {"name": "Francis, Prue"},
-    {"name": "Critchell, Kay"},
-    {"name": "Sherman, Craig"},
-    {"name": "Callahan, Laney"}
+    {
+      "name": "Odebiri, Omosalewa"
+    },
+    {
+      "name": "Young, Mary"
+    },
+    {
+      "name": "Francis, Prue"
+    },
+    {
+      "name": "Critchell, Kay"
+    },
+    {
+      "name": "Sherman, Craig"
+    },
+    {
+      "name": "Callahan, Laney"
+    }
   ],
   "keywords": [
     "benthic habitat",
@@ -22,5 +34,13 @@
     "dashboard",
     "remote sensing"
   ],
-  "version": "1.0.0"
+  "version": "1.0.0",
+  "doi": "10.5281/zenodo.22870207",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/odebs/PPB-Benthic-Habitat-Monitoring",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
 }
