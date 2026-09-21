@@ -32,6 +32,7 @@ These values are the public-script reproducibility benchmark for this repository
 ## Important interpretation
 
 The archived annual classified images are the authoritative map products used in the manuscript.
+Minor rerun variation can occur because the historical Random Forest workflow was not fully seeded.
 Re-running the Random Forest workflow can produce small numerical differences because the
 historical main classifier was fitted without a fixed RF seed. The repository therefore freezes
 the original sampled predictor table, original 70/30 split, and exact polygon-CV partition to
