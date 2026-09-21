@@ -38,7 +38,11 @@ The annual classified habitat maps are referenced as public Earth Engine assets 
 
 ## Citation / DOI
 
-Version 1.0.0 is prepared for GitHub + Zenodo archival. Add the GitHub URL and Zenodo DOI to `CITATION.cff` and the manuscript Data Availability statement after the release is minted.
+Zenodo DOI: **10.5281/zenodo.22870207**
+
+Repository: https://github.com/odebs/PPB-Benthic-Habitat-Monitoring
+
+Please cite the archived release using the Zenodo DOI above. The associated manuscript is titled **“Beyond Static Maps: An Operational Framework for Marine Habitat Monitoring in Southeastern Australia.”**
 
 ## License
 
