@@ -22,3 +22,7 @@ The archived `annual_turbidity.csv` reproduces the reported Spearman rank coeffi
 
 ## Polygon cross-validation
 The locked public GEE workflow uses 81 frozen reference features, the exact saved fold allocation (30/27/24), and the frozen original sampled predictor table/split. It was run twice, unchanged, in a blank Earth Engine Code Editor and produced a consistent final benchmark of mean OA **0.809282 (80.9%)**, mean Kappa **0.705402**, SD OA **0.046550 (4.7 percentage points)**, and SD Kappa **0.057425**. This is the repository reproducibility benchmark that should be used when reconciling the manuscript, supplement, response letter, and dashboard text.
+
+
+## Reproducibility note
+Minor rerun variation can occur because the historical Random Forest workflow was not fully seeded. This run-to-run variation is distinct from the reported three-fold CV standard deviation and should not be added as an extra uncertainty term.
